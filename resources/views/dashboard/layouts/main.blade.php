@@ -77,10 +77,13 @@
     <script src="{{ asset('dashmin/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('dashmin/modules/datatables/Select-1.2.4/js/dataTables.select.min.js') }}"></script>
     <script src="{{ asset('dashmin/modules/jquery-ui/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('dashmin/modules/sweetalert/sweetalert.min.js') }}"></script>
+
 
     <!-- Page Specific JS File -->
     <script src="{{ asset('dashmin/js/page/index-0.js') }}"></script>
     <script src="{{ asset('dashmin/js/page/modules-datatables.js') }}"></script>
+    <script src="{{ asset('dashmin/js/page/modules-sweetalert.js') }}"></script>
 
 
     <!-- Template JS File -->

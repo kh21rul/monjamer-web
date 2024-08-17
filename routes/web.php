@@ -33,7 +33,10 @@ Route::resource('/dashboard/controls', DashboardHistoryController::class)->middl
 ]);
 Route::get('/dashboard/cetak', [DashboardHistoryController::class, 'cetak'])->middleware('auth');
 
-Route::get('/dashboard/history/fun', [DashboardHistoryController::class, 'cetak'])->middleware('auth');
+Route::get('/dashboard/history/fan', [DashboardHistoryController::class, 'getfan'])->name('dashboard.history.fan')->middleware('auth');
+Route::get('/dashboard/history/humidifier', [DashboardHistoryController::class, 'gethumidifier'])->name('dashboard.history.humidifier')->middleware('auth');
+Route::delete('/dashboard/history/fan/{fanLog}', [DashboardHistoryController::class, 'deletefan'])->name('dashboard.history.fan.delete')->middleware('auth');
+Route::delete('/dashboard/history/humidifier/{humidifierLog}', [DashboardHistoryController::class, 'deletehumidifier'])->name('dashboard.history.humidifier.delete')->middleware('auth');
 
 Route::get('/readsensors', [MonitoringController::class, 'readsensors'])->middleware('auth');
 
