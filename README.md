@@ -1,3 +1,3 @@
-## About Laravel
+## About Project
 
-Website Untuk Monitoring(kelembapan & suhu) budidaya jamur tiram menggunakan fuzzy tsukamoto
+Website Untuk Monitoring(kelembapan & suhu) budidaya jamur merang menggunakan fuzzy tsukamoto
